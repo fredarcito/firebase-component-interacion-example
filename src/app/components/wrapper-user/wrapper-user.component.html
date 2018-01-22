@@ -1,0 +1,9 @@
+<article>
+  <section id="controls">
+    <app-user-selector (onSelectedUser)="onSelectUser($event)"></app-user-selector>
+    <app-user-creator></app-user-creator>
+  </section>
+  <section id="details">
+    <app-user-details [currentUser]="currentUser"></app-user-details>
+  </section>
+</article>

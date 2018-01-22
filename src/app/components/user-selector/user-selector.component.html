@@ -1,0 +1,4 @@
+<select [(ngModel)]="userSelected" title="Select an user" (change)="selectUser(userSelected)">
+  <option [ngValue]="undefined" disabled>Select an user</option>
+  <option *ngFor="let userWrapper of userList | async" [ngValue]="userWrapper">{{userWrapper.data.name}}</option>
+</select>
